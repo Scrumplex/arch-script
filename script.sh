@@ -68,6 +68,7 @@ sudo sh -c "sed -i '/^[ ]*[#]*[ ]*PermitRootLogin[ ]\+/s/^.*$/PermitRootLogin no
 sudo systemctl enable sshd
 
 # miscellaneous
-aurman --needed --noconfirm --noedit -Syu net-tools ntfs-3g android-tools android-udev google-chrome jdk rsync htop nload netdata wireshark
+aurman --needed --noconfirm --noedit -Syu net-tools ntfs-3g android-tools android-udev google-chrome jdk rsync htop nload netdata wireshark-qt
 sudo gpasswd -a $USER adbusers
 sudo gpasswd -a $USER wireshark
+sudo systemctl enable netdata
